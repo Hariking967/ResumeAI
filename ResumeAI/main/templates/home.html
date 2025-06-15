@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume AI</title>
+    <link rel='stylesheet' href="{%static 'css/global.css' %}">
+</head>
+<body>
+    <form method="POST" action="{% url 'main:home' %}" enctype="multipart/form-data" class="resume-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+
+    <p class="section-heading">Here is your Review:</p>
+
+    <p class="section-title summary-title"><b>Summary:</b></p>
+    {% for s in answer.summary %}
+        <p class="summary-item">{{ s }}</p>
+    {% endfor %}
+
+    <p class="section-title feedback-title"><b>Feedback:</b></p>
+    {% for f in answer.feedback %}
+        <p class="feedback-item">{{ f }}</p>
+    {% endfor %}
+
+    <p class="section-title improve-title"><b>Areas to improve:</b></p>
+    {% for i in answer.improvement %}
+        <p class="improve-item">{{ i }}</p>
+    {% endfor %}
+</body>
+</html>
