@@ -1,7 +1,7 @@
 # Core web and backend
 Django==5.1.7
-Flask==3.1.0
-Flask-SQLAlchemy==3.1.1
+#Flask==3.1.0
+#Flask-SQLAlchemy==3.1.1
 gunicorn==23.0.0
 dj-database-url==3.0.0
 psycopg2-binary==2.9.10
@@ -13,21 +13,21 @@ httpx==0.28.1
 requests==2.32.3
 
 # NLP / AI / Transformers
-spacy==3.8.7
-en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
-transformers==4.52.4
-tokenizers==0.21.1
-torch==2.6.0
-torchvision==0.21.0
-scikit-learn==1.6.1
-xgboost==2.1.4
+#spacy==3.8.7
+#en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
+#transformers==4.52.4
+#tokenizers==0.21.1
+#torch==2.6.0
+#torchvision==0.21.0
+#scikit-learn==1.6.1
+#xgboost==2.1.4
 
 # Data science utilities
-pandas==2.2.3
-numpy==2.2.2
-matplotlib==3.10.1
-seaborn==0.13.2
-tqdm==4.67.1
+#pandas==2.2.3
+#numpy==2.2.2
+#matplotlib==3.10.1
+#seaborn==0.13.2
+#tqdm==4.67.1
 
 # PyMuPDF
 PyMuPDF==1.26.1
