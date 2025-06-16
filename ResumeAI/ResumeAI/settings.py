@@ -31,7 +31,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['resumeaiservice.up.railway.app']
 
-
+CSRF_TRUSTED_ORIGINS = ['https://resumeaiservice.up.railway.app']
 # Application definition
 
 INSTALLED_APPS = [
