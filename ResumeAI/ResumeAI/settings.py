@@ -29,7 +29,7 @@ SECRET_KEY = key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['resumeaiservice-production.up.railway.app']
+ALLOWED_HOSTS = ['resumeaiservice.up.railway.app']
 
 
 # Application definition
